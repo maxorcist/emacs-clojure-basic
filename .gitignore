@@ -1,0 +1,12 @@
+/*
+
+!.gitignore
+!README.md
+
+!init.el
+!customization/
+
+themes/
+!themes/color-theme-tomorrow.el
+!themes/tomorrow**.el
+!themes/zenburn**
