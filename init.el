@@ -1,5 +1,4 @@
 ; init.el
-
 ;; Author maxorcist
 ;;
 ;; Notes:
@@ -57,6 +56,9 @@
 (load "setup-js.el")
 
 ;; THis is where user defined configuration go!
-(global-set-key (kbd "M-p") (kbd "C-u 10 C-p"))
-(global-set-key (kbd "M-n") (kbd "C-u 10 C-n")) 
 
+(global-set-key (kbd "M-p") (kbd "C-u 10 C-p"))
+(global-set-key (kbd "M-n") (kbd "C-u 10 C-n"))
+
+(eval-after-load 'lispy
+  '(define-key lispy-mode-map (kbd "M-n") nil))
