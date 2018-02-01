@@ -1,11 +1,11 @@
-;; Turn on lispy (parEdit like) for lisp modes
-(autoload 'lispy-mode "lispy" "Turn on pseudo-structural editing of Lisp code." t)
-(add-hook 'emacs-lisp-mode-hook       #'lispy-mode)
-(add-hook 'eval-expression-minibuffer-setup-hook #'lispy-mode)
-(add-hook 'ielm-mode-hook             #'lispy-mode)
-(add-hook 'lisp-mode-hook             #'lispy-mode)
-(add-hook 'lisp-interaction-mode-hook #'lispy-mode)
-(add-hook 'scheme-mode-hook           #''lispy-mode)
+;; Turn on paredit for lisp modes
+(autoload 'enable-paredit-mode "paredit" "Turn on pseudo-structural editing of Lisp code." t)
+(add-hook 'emacs-lisp-mode-hook       #'enable-paredit-mode)
+(add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
+(add-hook 'ielm-mode-hook             #'enable-paredit-mode)
+(add-hook 'lisp-mode-hook             #'enable-paredit-mode)
+(add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
+(add-hook 'scheme-mode-hook           #''enable-paredit-mode)
 
 ;; eldoc-mode shows documentation in the minibuffer when writing code
 ;; http://www.emacswiki.org/emacs/ElDoc

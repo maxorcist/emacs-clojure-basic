@@ -4,8 +4,8 @@
 
 
 
-;; Enable Lispy for Clojure
-(add-hook 'clojure-mode-hook 'lispy-mode)
+;; Enable Paredit for Clojure
+(add-hook 'clojure-mode-hook 'enable-paredit-mode)
 
 ;; This is useful for working with camel-case tokens, like names of
 ;; Java classes (e.g. JavaClassName)
@@ -32,7 +32,7 @@
 ;;;;
 
 ;; provides minibuffer documentation for the code you're typing into the repl
-(add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
+(add-hook 'cider-mode-hook 'eldoc-mode)
 
 ;; go right to the REPL buffer when it's finished connecting
 (setq cider-repl-pop-to-buffer-on-connect t)
@@ -47,8 +47,8 @@
 ;; Wrap when navigating history.
 (setq cider-repl-wrap-history t)
 
-;; enable lispy in your REPL
-(add-hook 'cider-repl-mode-hook 'lispy-mode)
+;; enable paredit in your REPL
+(add-hook 'cider-repl-mode-hook 'enable-paredit-mode)
 
 ;; Remove cider welcome message.
 (setq cider-repl-display-help-banner nil)

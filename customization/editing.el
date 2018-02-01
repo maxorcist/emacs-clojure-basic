@@ -58,9 +58,12 @@
 
 (global-set-key (kbd "M-;") 'comment-or-uncomment-region-or-line)
 
+;; Custom trial at getting global rainbows
+(define-globalized-minor-mode global-rainbow-delimiters-mode
+  rainbow-delimiters-mode rainbow-delimiters-mode-enable)
+
 ;; yay rainbows!
-(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-(add-hook 'cider-repl-mode-hook #'rainbow-delimiters-mode)
+(global-rainbow-delimiters-mode t)
 
 ;; use 2 spaces for tabs
 (defun die-tabs ()
