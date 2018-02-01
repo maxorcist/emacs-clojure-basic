@@ -43,6 +43,8 @@
                                                "backups"))))
 (setq auto-save-default nil)
 
+;; Allows deletion/replacement of marked text like other editors.
+(delete-selection-mode 1)
 
 ;; comments
 (defun comment-or-uncomment-region-or-line ()
