@@ -30,3 +30,6 @@
 ;; Ivy and Flx
 (setq ivy-re-builders-alist
       '((t . ivy--regex-fuzzy)))
+
+;; Projectile for projects
+(counsel-projectile-mode t)

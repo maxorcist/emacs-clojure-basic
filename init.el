@@ -33,6 +33,7 @@
     clojure-mode-extra-font-locking
     cider
     counsel
+    counsel-projectile
     ivy
     flx
     rainbow-delimiters
